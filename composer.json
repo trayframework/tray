@@ -1,5 +1,5 @@
 {
-  "name": "trayframework/tray",
+  "name": "trayframework/gxtray",
   "description": "Tray Frameworks",
   "type": "library",
   "autoload": {
