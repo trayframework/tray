@@ -49,4 +49,8 @@ class BaseRouter
         }
         return "";
     }
+    function getSelfUrl(): string
+    {
+        return "";
+    }
 }
