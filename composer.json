@@ -1,0 +1,19 @@
+{
+  "name": "trayframework/tray",
+  "description": "Tray Frameworks",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Tray\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Najib",
+      "email": "najib@tray.my"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  }
+}
