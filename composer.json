@@ -2,6 +2,7 @@
   "name": "trayframework/gxtray",
   "description": "Tray Frameworks",
   "type": "library",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "Tray\\": "src/"
