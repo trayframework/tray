@@ -4,11 +4,11 @@ class Request
 {
     public static function get(string $key, mixed $default = null): mixed
     {
-        return self::clean($_GET[$key] ?? $default);
+        return $_GET[$key] ?? $default;
     }
     public static function post(string $key, mixed $default = null): mixed
     {
-        return self::clean($_POST[$key] ?? $default);
+        return $_POST[$key];
     }
 
     public static function postDecoded(string $key, mixed $default = null): mixed
