@@ -17,10 +17,7 @@ class Database
         $dbname = $config['dbname'] ?? '';
         $connected  = $db->connect($dbhost, $dbuser, $dbpass, $dbname);
         $db->SetFetchMode(ADODB_FETCH_ASSOC);
-        // Force ADOdb to throw on error
-        $db->raiseErrorFn = function($conn, $errno, $errmsg) use ($config) {
-            throw new \RuntimeException("DB Error ($errno): $errmsg [{$config['database']}]");
-        };
+        
         if (!$connected) {
             return false;
         }
